@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ALign & flottants</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .elem{
+            background: #eee;
+            border : 1px solid #555;
+            padding: 20px;
+            text-align: left;
+            
+
+        }
+        .conteiner{
+            width: 1000px;
+            margin: auto;
+            
+
+
+        }
+        .elem_1{
+            float: left;
+            width: 70%;
+
+        }
+        .elem_2{
+            float: right;
+            width: 30%;
+
+        }
+        .elem_3{
+            clear: both;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="elem"> headr</div>
+        <div class="elem elem_1"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque ut esse eligendi placeat voluptate volupta
+            tem nisi ratione impedit blanditiis quidem.
+        </div>
+        <div class="elem elem_2"> je suis un autre blabla </div>
+        <div class="elem elem_3">footer </div>
+
+    </div>
+ 
+</body>
+</html>

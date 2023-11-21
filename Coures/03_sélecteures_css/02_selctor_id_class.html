@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector id class</title>
+    <style>
+       div + span{
+        color:red;
+       }
+       div ~ p {
+        color:blue;
+       }
+    </style>
+</head>
+<body>
+    <h1 class="h1_select">Hello world</h1>
+    <div id="mon_id">
+        <p> sidi va a l'ecole</p>
+        <div>
+            <span> rouge ou non </span>
+            <h3>je suis un h3</h3>
+        </div>
+    </div>
+    <p class="h1_select font"> je suis un p</p>
+    <div>bonjour</div>
+    <span> je suis rouge </span>
+    <span> je ne suis pan rouge</span>
+    <div>rouge ou non </div>  
+    <p>je suis blue</p>
+    <p>je suis blue</p>
+</body>
+</html>
