@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> les relations entre les selecteures </title>
+    <style>
+        
+        div[class="title"] {
+            background-color: green;
+            width: 100%;
+            height: 100px;
+        }
+
+
+        /* ----------- Groupement -------------- */
+        .g-h2 , .g-p{
+
+            color: red;
+
+        }
+
+        /* ----------- Combinateur descendente (espace) ----------- */
+        div p {
+            color: red;
+        }
+
+        /* --------------- combinateur enfant -------------------  */
+        
+        div > span {
+            color: red;
+        }
+
+        /* ------------------ combinateur voisins direct + --------------- */
+
+        h2 + h3 {
+            color: yellow;
+        }
+
+        /* --------------------- combinateur voisins géneraux ~------------------- */
+
+        div ~ h1 {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <h1> Groupement </h1> -->
+    <div class="title">Groupement</div>
+    <h2 class="g-h2"> sous titre </h2>
+    <p class="g-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, reiciendis.</p>
+
+    <div class="title">Combinateur descendante </div>
+
+
+    <div>
+        <p>P1</p>
+        <p>P2</p>
+        <h1>
+            <p>P3</p>
+        </h1>
+    </div>
+
+    <div class="title">Combinateur Enfant ~</div>
+
+    <div>
+        <span>P1</span>
+        <br>
+        <span>P2</span>
+
+        <h1>
+            <span>P3</span>
+        </h1>
+    </div>
+
+
+    <div class="title">Combinateur voisins directs</div>
+
+
+    <h2>ceci H2</h2>
+    <h3>ceci H3</h3>
+    <h3>H3</h3>
+
+
+    <div class="title">Combinateur voisins généraux </div>
+
+    <div></div>
+    <h2>H2</h2>
+    <h1>Titre1</h1>
+    <h1>Titre2</h1>
+
+</body>
+</html>
