@@ -343,5 +343,62 @@ Voici une brève description des principales relations entre les sélecteurs :
         **Explication :** Le sélecteur CSS cible tous les paragraphes qui suivent un titre `h3`, peu importe la distance qui les sépare, et leur applique la couleur verte.
 
 
+6. **combiner deux Sélecteurs:**
+
+
+    >**Description:** La combinaison de sélecteurs en CSS permet de regrouper plusieurs sélecteurs dans une règle de style unique, et elle cible les éléments qui satisfont tous les sélecteurs spécifiés dans cette combinaison.
+
+    - **Combinaison de deux classes :**
+
+        ```css
+        .class1.class2 {
+            /* Styles */
+        }
+        ```
+
+        Cela cible les éléments qui ont à la fois la classe `class1` et la classe `class2`.
+
+    
+    - **Combinaison d'un ID suivi d'une classe :**
+
+        ```css
+        #id1.class2 {
+            /* Styles */
+        }
+        ```
+
+        Cela cible les éléments avec l'ID `id1` qui ont également la classe `class2`.
+
+    - **Combinaison d'une classe suivi d'un ID :**
+
+        ```css
+        .class2#id1 {
+            /* Styles */
+        }
+        ```
+
+        Cela cible les éléments avec la classe `class2` qui ont également l'ID `id1`.
+
+    - **Combinaison d'un type suivi d'une classe :**
+
+        ```css
+        type.class1 {
+            /* Styles */
+        }
+        ```
+
+        Cela cible les éléments de type spécifique (par exemple, `<div>`, `<p>`, etc.) qui ont également la classe `class1`.
+
+    - **Combinaison d'un type suivi de n'importe quel élément :**
+
+        ```css
+        type * {
+            /* Styles */
+        }
+        ```
+
+        Cela cible tous les éléments descendants de type spécifique (par exemple, `<div>`, `<p>`, etc.) sous l'élément ayant le sélecteur `type`.
+
+
 
 

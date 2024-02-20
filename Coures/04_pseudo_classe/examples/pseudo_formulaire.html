@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-formule</title>
+
+    <style>
+        /* input:enabled {
+            color: rgb(46, 44, 44);
+            background-color: green;
+        }
+
+        input:checked {
+            margin-left: 25px;
+            border: 1px solid blue;
+        } */
+
+        label,input[type='submit'] {
+            display: block;
+            margin-top: 1em;
+        }
+
+        input:checked {
+            border: none;
+            outline: 2px solid deeppink;
+        }
+
+        input:focus {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form id="form">
+        <label for="inp-name">Nom</label>
+        <input type="text" name="name" id="inp-name">
+        <br>
+        <br>
+        <label for="inp-Prenom">Prenom</label>
+        <input type="text" name="Prenom" id="inp-Prenom">
+        <br>
+        <br>
+        <label for="inp-mail">Email</label>
+        <input type="email" name="email" id="inp-mail">
+        <br>
+        <label for="inp-check">OK</label>
+        <input type="radio" name="Mariée" id="inp-check" checked>
+
+
+    </form>
+
+    <form>
+        <p>How did you find out about us?</p>
+        <label><input name="origin" type="radio" value="google" checked /> Google</label>
+        <label><input name="origin" type="radio" value="facebook" /> Facebook</label>
+        <p>Please agree to our terms:</p>
+      
+        <label><input name="newsletter" type="checkbox" checked /> I want to subscribe to a personalized newsletter.</label>
+      
+        <label><input name="privacy" type="checkbox" /> I have read and I agree to the Privacy Policy.</label>
+    </form>
+</body>
+</html>

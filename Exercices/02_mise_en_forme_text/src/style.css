@@ -1,0 +1,31 @@
+
+header h1 {
+    text-align: center;
+    text-decoration: underline blue;
+    text-transform: uppercase;
+    
+}
+
+header {
+    background-color: gold;
+}
+main h2 {
+    text-align: center;
+    color: red;
+    text-decoration: underline dashed rebeccapurple;
+}
+
+.sec-1,.sec-2 , .sec-3 , .sec-4 {
+    font-family :cursive;
+    
+}
+
+.sec-1 {
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+.sec-4 {
+    font-weight: bold;
+}
