@@ -108,6 +108,46 @@ Ces propriétés sont souvent utilisées pour contrôler l'espace vertical dans 
 
 
 
+## 4. **La valeur `fit-content`:**
+
+- **Description:**
+  
+  >La valeur `fit-content` en CSS est utilisée pour spécifier la taille d'un élément en fonction de son contenu, mais avec une limite maximale déterminée par la largeur ou la hauteur du conteneur parent. En d'autres termes, elle permet à un élément de s'ajuster à la taille de son contenu, mais sans dépasser les limites fixées par le conteneur parent.La valeur `fit-content` est souvent utilisée avec la propriété `width` ou `height` pour définir la taille d'un élément. 
+  
+
+- **Voici un exemple d'utilisation avec `width` :**
+
+  ```css
+  .element {
+    width: fit-content;
+  }
+  ```
+
+  Dans cet exemple, la largeur de l'élément sera ajustée pour s'adapter au contenu, mais elle ne dépassera pas la largeur du conteneur parent.
+
+- **Exemple d'Utilisation:**
+
+  Exemple : L'utilisation de `fit-content` dans le contexte de vouloir qu'un élément de type ``block`` (`div` par exemple) prenne juste la taille de son contenu .
+
+  Voici un exemple où un div utilise `fit-content` pour s'ajuster à la largeur de son contenu :
+
+  ```css
+  .div-conteneur {
+    width: fit-content;
+    background-color: lightblue; /* Ajout d'une couleur de fond pour mieux visualiser */
+  }
+  ```
+
+  ```html
+  <div class="div-conteneur">
+    Contenu du div
+  </div>
+  ```
+
+  Dans cet exemple, le div avec la classe `.div-conteneur` ajustera automatiquement sa largeur pour correspondre à la largeur de son contenu, mais sans dépasser les limites du conteneur parent. Cela permet à l'élément de s'adapter de manière dynamique à la taille de son contenu sans nécessiter une largeur spécifique définie dans le CSS.
+
+  L'utilisation de `fit-content` est particulièrement pratique lorsque vous souhaitez éviter des débordements inutiles tout en maintenant la flexibilité d'ajustement à la taille du contenu.
+
 
 
 

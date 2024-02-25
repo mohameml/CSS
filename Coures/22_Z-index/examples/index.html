@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Contenu de la page */
+    .contenu {
+      position: relative;
+      z-index: 1; /* Valeur de z-index par défaut */
+      opacity: 0.5; /* Opacité pour assombrir légèrement le contenu */
+    }
+    h1 {
+        margin: 10px;
+    }
+
+    /* Menu déroulant */
+    .menu {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: 2; /* Une valeur plus élevée pour le menu, afin qu'il apparaisse au-dessus du contenu */
+      background-color: white;
+      padding: 15px;
+      border: 1px solid #ccc;
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenu">
+    <!-- Contenu principal de la page -->
+    <h1>Contenu Principal</h1>
+    <p>Texte, images, etc.</p>
+  </div>
+
+  <div class="menu">
+    <!-- Menu déroulant -->
+    <h2>Menu</h2>
+    <ul>
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+    </ul>
+  </div>
+
+</body>
+</html>

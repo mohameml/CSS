@@ -1,7 +1,7 @@
 # cour 6 : **Les unités CSS**
 
 
->Les unités de mesure en CSS sont utilisées pour définir la taille, la longueur, la couleur et d'autres propriétés des éléments sur une page web. Elles permettent aux développeurs web de spécifier des dimensions de manière précise et cohérente. 
+>Les unités de mesure en CSS sont utilisées pour définir la longueur  des éléments sur une page web. Elles permettent aux développeurs web de spécifier des dimensions de manière précise et cohérente. 
 
 
 ## 1. **les unités absolues:**

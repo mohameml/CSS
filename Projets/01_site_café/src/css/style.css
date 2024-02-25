@@ -1,0 +1,115 @@
+
+/* ------------------- règles générales ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html ,
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+        
+}
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px ;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.my-40 {
+    margin-top: 40px;
+    margin-bottom: 40px ;
+}
+
+
+
+
+
+/* --------------------------- Mise en forme de haeder ------------------------ */
+
+
+.header {
+    padding: 20px;
+    background-color: #333;
+    overflow: hidden;
+    color: white;
+}
+
+.header h1 {
+    /* float vers left */
+    float: left;
+
+    /* mis en forme de text */
+    text-transform: uppercase;
+    text-align: center;
+    /* color: white; */
+
+
+}
+
+
+
+.header nav ul {
+    list-style: none;
+    float: right;
+
+
+}
+
+.header nav ul li {
+
+    /* float left */
+    float: left;
+    
+    /* margin entre les li */
+    /* border: 1px solid red; */
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
+.header a {
+    /* color */
+    color: white;
+}
+
+/* --------------------------- Mise en forme de section1 ------------------------ */
+
+main {
+
+
+}
+
+.sec1-title {
+    margin: 20px;
+    font-size: 50px;
+    font-weight: 400px;
+
+}
+
+.line-noir {
+    background-color: black;
+    height: 20px;
+    width: 20px;
+}
+.sec-1 {
+    padding: 20px;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+    background: url("../images/img1.jpg")   ;
+    background-repeat: cover    ;
+    color: white;
+}

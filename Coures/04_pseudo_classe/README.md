@@ -3,7 +3,9 @@
 
 ## 1. **Définition:**
 
->``Une pseudo-classe`` est un mot-clé qui peut être ajouté à un sélecteur afin d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé par la déclaration. 
+- **Definition:**
+
+  >``Une pseudo-classe`` est un mot-clé qui peut être ajouté à un sélecteur afin d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé par la déclaration. 
 
 - **Exemple:**
     La pseudo-classe ``:hover``, par exemple, permettra d'appliquer une mise en forme spécifique lorsque l'utilisateur survole l'élément ciblé par le sélecteur (changer la couleur d'un bouton par exemple).

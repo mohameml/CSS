@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* ---- donée : center un div -------------- */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  min-height: 100vh; 
+  background: url("../images/img.jpg") no-repeat ;
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* --------- container --------------- */
+.container {
+  width: 420px;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+
+}
+
+
+/* le titre : login */
+.container h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+
+/* --------- form ------------ */
+
+form , .input-box {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.input-box input {
+  height: 30px;
+  border: none;
+  outline: none;
+  border: 1px solid #DDD;
+  border-radius: 40px ;
+}
+
+.input-box i {
+  padding-top: 15px;
+  color: black;
+  margin-left: -25px;
+}
+
+.remember-me  {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  margin-left:auto ;
+  margin-right: auto;
+}
+
+.remember-me a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 50px;
+  color: white;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.btn {
+  font-size: 20px;
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border: 1px solid #DDD;
+  border-radius: 40px;
+  height: 50px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.register-link {
+
+  width: 70%;
+  margin-left:auto ;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+
+
+.register-link a  {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 5px;
+  color: white;
+}
+
+
+.remember-me a:hover ,
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+ /* .input-box  , .register-link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+  margin-left:auto ;
+  margin-right: auto;
+} */
+
+
+
+
+
+
+
+
+

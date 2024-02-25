@@ -1,0 +1,25 @@
+
+
+body {
+    margin: 0;
+}
+
+
+div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    text-align: center;
+    float: left;
+    width: calc((100% - 50px)/4);
+    margin-left: 10px;
+}
+
+
+/**
+
+    margin : 10px 
+    5 espace => place restant = 100% - 5x10px
+    4 elments => (100% - 50px)/4
+
+**/
