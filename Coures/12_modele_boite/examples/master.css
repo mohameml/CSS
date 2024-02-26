@@ -1,0 +1,23 @@
+
+* {
+    box-sizing: border-box;
+}
+.parent {
+    width: 640px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #DDD;
+}
+
+.one {
+    background-color: #eee;
+    width: 300px;
+    float: left;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+    /* margin: 10px; */
+    /* margin-right: 10px; */
+}
+

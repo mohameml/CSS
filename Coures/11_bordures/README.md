@@ -260,6 +260,14 @@ L'épaisseur de la bordure peut être exprimée en pixels, en pourcentage, en em
     }
     ```
 
+- **Exemple:**
+
+    ![alt text](images/raduis.png)
+
+#### RQ :
+
+- si``width=height`` et ``border-raduis: 50%``  => cercel
+
 ## 3. **Le raccourci `border`:**
 
 - **Description:**

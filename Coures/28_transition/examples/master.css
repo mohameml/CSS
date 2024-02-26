@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.one {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    transition-duration: 10s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.one:hover {
+    margin-left:20px ;
+    width: 1000px;
+    /* background-color: red; */
+}

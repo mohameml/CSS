@@ -1,0 +1,15 @@
+/* div {
+    background-color: #eee;
+    height: 100px;
+    width: 100px;
+    box-shadow: -3px -1px 6px 0px inset;
+} */
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    box-shadow: 
+        5px 5px 10px 0px rgba(0, 0, 0, 0.5)  ,
+        -5px -5px 10px 0px rgba(255, 255, 255, 0.5) inset;
+    }

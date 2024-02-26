@@ -197,3 +197,47 @@ La propriété `padding` peut également accepter des valeurs en pourcentage, en
 
         En ajoutant une bordure ou un `padding` au parent, vous créez une barrière qui empêche la fusion des marges entre l'enfant et le parent. Cela peut être particulièrement utile lorsque le parent n'a pas de marges délibérément, mais que vous souhaitez éviter le comportement de débordement de marge.
         
+
+
+## 4. **``box-sizing``:**
+
+- **Description:**
+
+    >La propriété `box-sizing` en CSS est utilisée pour définir la boîte de modélisation utilisée pour calculer la largeur et la hauteur totales d'un élément. Elle peut prendre l'une des deux valeurs principales : `content-box` ou `border-box`.
+
+1. **`content-box` (valeur par défaut) :** 
+    
+    >La largeur et la hauteur de l'élément sont calculées en tenant compte uniquement du contenu, c'est-à-dire la zone à l'intérieur de la bordure. Les propriétés `width` et `height` définissent la taille du contenu de l'élément, et la bordure, le remplissage (padding)  s'ajoutent à cette taille.
+
+   - **Exemple :**
+
+   ```css
+   .box {
+     width: 100px;
+     height: 100px;
+     padding: 10px;
+     border: 2px solid #3498db;
+     box-sizing: content-box;
+   }
+   ```
+
+   Dans cet exemple, la largeur totale de l'élément sera de 124 pixels (100px pour le contenu + 2x10px pour le padding + 2x2px pour la bordure).
+
+2. **`border-box` :** 
+    
+    >La largeur et la hauteur de l'élément incluent la bordure et le remplissage (padding). Cela signifie que la taille définie par les propriétés `width` et `height` comprend également la bordure et le padding.
+
+   - **Exemple :**
+
+    ```css
+    .box {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        border: 2px solid #3498db;
+        box-sizing: border-box;
+    }
+    ```
+
+   Dans cet exemple, la largeur totale de l'élément sera de 100 pixels (définie par la propriété `width`), et la hauteur totale sera également de 100 pixels (définie par la propriété `height`). La bordure et le padding sont inclus dans la taille totale.
+
