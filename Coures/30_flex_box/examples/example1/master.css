@@ -1,0 +1,45 @@
+/*
+    Flexible box
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    background-color: #eee;
+    width: 640px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px auto;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+
+}
+
+.flex div {
+    background-color: #f00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100px;
+    margin-right: 5px;
+
+}
+
+.one {
+    align-self: flex-end;
+}
+
+.three {
+    align-self: center;
+}
+
+.six {
+    align-self: stretch;
+}
+
+
+

@@ -31,7 +31,9 @@ a {
     margin-bottom: 40px ;
 }
 
-
+.container {
+    padding: 10px;
+}
 
 
 
@@ -43,6 +45,7 @@ a {
     background-color: #333;
     overflow: hidden;
     color: white;
+    /* width: 100%; */
 }
 
 .header h1 {
@@ -87,29 +90,65 @@ a {
 
 /* --------------------------- Mise en forme de section1 ------------------------ */
 
-main {
 
-
-}
 
 .sec1-title {
-    margin: 20px;
+    display: 	block;
+    margin: 20px auto;
     font-size: 50px;
-    font-weight: 400px;
-
+    font-weight: 400;
+    /* width: 200px; */
+    /* height: 100px; */
+    text-align: center;
+    /* white-space: ; */
 }
 
 .line-noir {
     background-color: black;
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec-1 .container {
+    
 }
 .sec-1 {
-    padding: 20px;
-    height: 800px;
+    display: block;
+    height: 700px;
     width: 100%;
     text-align: center;
     background: url("../images/img1.jpg")   ;
-    background-repeat: cover    ;
+    background-size: cover;
     color: white;
 }
+
+.sec-1 p {
+    margin: 20px;
+}
+
+.sec-1 button {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    width: 40%;
+    height: 50px;
+    border-radius: 40px;
+    color: black;
+
+}
+
+.sec-1 button:hover  {
+    background-color: #333;
+    color: white;
+}
+
+.sec-1 button a {
+    color: inherit;
+    font-weight: bold;
+    font-size: 15px;
+}
+
