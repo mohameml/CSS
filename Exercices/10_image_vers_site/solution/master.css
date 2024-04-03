@@ -1,0 +1,149 @@
+
+/* ---------- style for all page :  ------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: #DDD;
+    font-family: "Poppins", sans-serif;
+    /* width: 900px; */
+}
+
+.page {
+    width: 900px;
+    margin: auto;
+}
+
+
+/* ------------- msie en forme de l'en tete  */
+
+.entete {
+    background-color :cadetblue ;
+    padding: 15px;
+    margin-top: 10px;
+    /* margin: 10px; */
+}
+.entete h1 {
+    color: rgb(116, 68, 7);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.ligne {
+    background-color: maroon;
+    height: 20px;
+}
+
+.entete h2 {
+    color: white;
+}
+
+
+.sous-titre {
+    background-color: burlywood;
+    color: maroon;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+
+.sous-entete {
+    color :rgba(9, 172, 115, 0.637);
+    font-style: italic;
+    margin-bottom: 20px;
+
+}
+
+.sous-entete span {
+    color: burlywood;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(197, 11, 197);
+}
+
+
+/* ------------------------- mise en forme du main : --------------------- */
+
+
+.numero::before {
+    content: "n⁰";
+}
+
+
+
+.numero {
+    display: inline-block;
+    border: solid #DDD 2px;
+    border-radius: 10px;
+    background-color: burlywood;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    padding: 5px;
+    
+
+}
+
+
+
+.title-p::after {
+    content: "";
+    display: block;
+    background-color: maroon;
+    height: 5px;
+    position: relative;
+    top:-15px ;
+    margin-left: 50px;
+}
+
+
+
+.description {
+    background-color: rgba(43, 95, 43, 0.562);
+    border: solid green 3px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+ul {
+    margin-left: 50px;
+}
+
+
+/* ----------------------- mise en forme du footer ----------------------------- */
+
+
+.footer {
+    margin-top: 10px;
+    color: maroon;
+}
+
+
+.footer::after {
+    content: "";
+    display: block;
+    background-color: maroon;
+    position: relative;
+    height: 7px;
+}
+
+.list-footer {
+    margin-bottom: 30px;
+    
+}
+
+.list-footer a {
+    color: maroon;
+    font-style: italic;
+}
+

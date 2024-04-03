@@ -1,0 +1,156 @@
+/************************************************************
+ * ATTENTION REGLAGES DE L'INTERFACE GLOBALE.
+ * NE PAS TOUCHER AUX LIGNES CI-DESSOUS
+ * TRAVAILLEZ A PARTIR DE LA LIGNE 27 !!
+ ************************************************************/
+.page{
+    width: 900px;
+    margin:auto;
+}
+.entete{
+    height: 100px;
+}
+.colonne_menu{
+    float:left;
+    width:200px;
+    height:100%;
+}
+.colonne_contenu {
+    margin-left:200px;
+}
+.pieddepage{
+    height:50px;
+}
+
+/************************************************************
+ * SAISISSEZ VOS DECLARATIONS CSS EN-DESSOUS DE CETTE LIGNE
+ ************************************************************/
+body{
+	/* Pour avoir le choix des couleurs https://htmlcolorcodes.com/fr/noms-de-couleur/ */
+    background-color:#DDD;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.page {
+	/* background-color: red;  */
+}
+
+/* ----------------- Mise en forme de l'en-tete */
+.entete{
+    background-color: hotpink;
+    padding: 10px;
+}
+
+.title-entete {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.sous-title-entete {
+    font-size: 16px;
+    color: white;
+    font-style: italic;
+}
+
+/* ------------------ ---------------------- */
+.colonnes {
+    background-color: deepskyblue;
+}
+.colonne_menu{
+    background-color: gold;
+}
+.colonne_contenu {
+    /* background-color: lightgreen; */
+    background-color: white;
+    padding: 10px;
+
+}
+
+.colonne_contenu h1 {
+    background-color: #eee;
+    padding: 10px;
+    border-bottom: 10px solid lightgreen;
+    margin-bottom: 30px;
+}
+
+.colonne_contenu h2 {
+    font-size: 20px;
+    color: lightgreen;
+    margin: 20px;
+}
+
+.colonne_contenu strong {
+    color: red;
+    font-weight: bold;
+}
+
+.colonne_contenu em {
+    color: green;
+    font-weight: bold;
+}
+
+.introduction {
+    font-style: italic;
+    border: 3px solid #22c322;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.colonne_contenu a {
+    font-weight: bold; 
+}
+
+
+.colonne_contenu a:hover {
+    text-decoration: none;
+    color: green;
+}
+
+
+
+/* --------------------- Mise en forme du menu de la page HTML ----------------------------- */
+
+.colonnes , .colonne_menu{
+    background-color: #009688;
+}
+
+.colonne_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.colonne_menu li {
+    list-style-type: none;
+    background-color: yellow;
+    text-align: center;
+    /* padding: 5px; */
+    margin: 5px;
+}
+
+.colonne_menu li:hover {
+    background-color: red;
+}
+.colonne_menu li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* -------------- Mise en forme de footer --------------- */
+.pieddepage{
+    background-color: black;
+    /* padding: 20px; */
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+

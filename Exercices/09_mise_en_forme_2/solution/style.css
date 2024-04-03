@@ -1,0 +1,106 @@
+body {
+    background-color: #ddd;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    /* font-family: ; */
+}
+.page {
+    /* background-color: blue; */
+    width: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entete {
+    background-color: pink;
+    margin: 20px 0px;
+    padding: 10px;
+    height: 80px;
+    border: 3px solid red;
+    border-radius: 10px;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    padding-left: 200px;
+}
+
+.entete .titre {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.entete .sous-titre {
+    font-size: 15px;
+    color: blueviolet;
+}
+
+.menu {
+    background-color: rgba(167, 62, 194, 0.507);
+    margin: 20px 0px;
+    padding: 10px;
+    border: 3px solid blueviolet ;
+    border-radius: 20px;
+}
+
+
+.menu li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover {
+    color: rgba(180, 24, 24, 0.712);
+}
+
+
+.contenu {
+    background-color: white;
+    margin-top: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 3px solid red;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contenu h1  {
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top:20px ;
+    margin-bottom : 20px ;
+
+}
+
+.contenu h2 {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top:20px ;
+    margin-bottom : 20px ;
+
+}
+
+.pieddepage {
+    background-color: red;
+    /* margin-top: 20px; */
+    padding: 10px;
+    border: 3px solid red;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    text-align: right;
+
+}
