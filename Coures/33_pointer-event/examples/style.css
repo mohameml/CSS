@@ -1,0 +1,24 @@
+
+
+p , textarea {
+    caret-color: red;
+}
+
+
+.my-b {
+    display: block;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: solid wheat 2px;
+    border-radius: 20px;
+    /* pointer-events: none; */
+
+}
+
+button:hover {
+    background-color: #eee;
+}
+

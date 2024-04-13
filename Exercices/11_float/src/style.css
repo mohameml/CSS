@@ -1,0 +1,34 @@
+
+body{
+    background-color: #a585fc;
+    margin: 0;
+}
+
+.page{
+    background-color: #ffffff;
+    height: 100px;
+}
+.entete{
+    background-color: #ff8eaf;
+}
+.colonnes {
+    background-color: #8cbdfc;
+    /* overflow: hidden; */
+}
+.colonne_menu{
+    float: right;
+    width: 200px;
+    background-color: #fcf794;
+}
+.colonne_contenu {
+    background-color: #b0fcd6;
+    margin-right: 200px;
+    padding: 20px;
+
+}
+
+
+.pieddepage{
+    background-color: #cccccc;
+    clear: both;
+}
