@@ -1,0 +1,30 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    background-color: #eee;
+    margin: 20px auto;
+    /* padding: 20px; */
+    /* width: 800px; */
+    height: 500px;
+
+    display: grid;
+    grid-template-columns:  repeat(auto-fit ,minmax(100px , 200px));
+    /* gap: 10px; */
+}
+
+.parent div {
+
+    color: white;
+    font-size: 30px;
+    background-color: red;
+    font-weight: bold;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
