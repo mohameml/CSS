@@ -30,9 +30,11 @@
 - 28_transition : done 
 - 29_varibale_css : done 
 - 30_flex_box : done 
-- 31_filter_gradient_pointer-event
-- 32_grid
-- 33_transform_2D_3D
-- 34_animation
-- 35_mediq_queries
+- 31_filter : done
+- 32_gradient : done 
+- 33_pointer-event : done 
+- 34_grid : done 
+- 35_transform_2D_3D
+- 36_animation
+- 37_mediq_queries
 
