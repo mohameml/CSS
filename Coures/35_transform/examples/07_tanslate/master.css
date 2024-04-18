@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+}
+.parent {
+    background-color: #eee;
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 20px;
+
+    perspective: 200px;
+    perspective-origin: center center;
+
+
+
+}
+
+.parent > div {
+    background-color: rgba(255, 0, 0, 0.349);
+    width: 90%;
+    height: 90%;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5%;
+    margin-left: 5%;
+
+    transition: .5s;
+
+    transform: translate3d(100px , 0px, 50px);
+
+
+
+}
+
+

@@ -1,0 +1,53 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+.spahe {
+    background-color: #eee;
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    
+
+}
+
+.spahe > div {
+    background-color: rgba(255, 0, 0, 0.349);
+    width: 90%;
+    height: 90%;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5%;
+    margin-left: 5%;
+
+    transition: .5s;
+
+    transform-origin: right bottom;
+    transform: rotate(20deg);
+
+
+    position: relative;
+}
+
+
+.spahe > div::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 98%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+
+}
