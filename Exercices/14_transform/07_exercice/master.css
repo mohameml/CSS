@@ -8,7 +8,7 @@ div {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
-    perspective: 600px;
+    perspective: 100px;
 }
 
 div::before ,
@@ -24,7 +24,7 @@ div::after {
     position: absolute;
     top: 0;
     left: 0;
-    perspective: 600px;
+
 
 }
 
@@ -42,4 +42,13 @@ div::after {
 
 div:hover {
     transform: rotateY(-180deg);
+}
+
+
+.cas-2::after {
+    transform: rotateX(-180deg);
+}
+
+.cas-2:hover {
+    transform: rotateX(180deg);
 }
