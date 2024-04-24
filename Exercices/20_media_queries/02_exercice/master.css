@@ -1,0 +1,61 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.parent > div {
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid   #ddd;
+    padding: 20px;
+}
+
+
+.parent > div::after {
+    content: "This is Product";
+
+}
+
+.parent > div > span {
+    display: block;
+    color: #009688;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+/* Mobile */
+
+@media (max-width : 768px) {
+
+    .parent div {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .parent > div > span {
+        color: black;
+    }
+}
+
+
+/* Moyenne */
+
+@media (min-width : 769px) and (max-width  : 1199px) {
+    .parent div {
+        width: calc(45% - 20px);
+        margin-bottom: 5px;
+    }
+
+    .parent > div > span {
+        color: red ;
+    }
+}
+
