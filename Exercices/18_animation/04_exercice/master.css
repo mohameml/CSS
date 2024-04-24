@@ -1,0 +1,191 @@
+
+
+
+/* ------------------------ E ----------------------------- */
+
+
+.E {
+    position: relative;
+    /* background-color: #ddd; */
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+}
+
+.E-1 , 
+.E-2 , 
+.E-3 {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+
+}
+
+
+.E-1 {
+    top: 0;
+    left: 0;
+}
+
+.E-2 {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.E-3 {
+    bottom: 0;
+    left: 0;
+}
+
+
+.E-4 {
+    position: absolute;
+    width: 50px;
+    height: 300px;
+    top: 0;
+    left: -50px;
+    background-color: black;
+}
+
+
+
+
+.carre-1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    top: 5px;
+    left: -45px;
+
+
+    animation-name: move-1;
+    animation-duration: 10s;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+
+
+
+}
+
+@keyframes move-1 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    
+    15% {
+        transform: translateX(150px) translateY(0);
+    }
+
+    30% {
+        transform: translateX(0px) translateY(0);
+    }
+
+    45% {
+        transform: translateX(0px) translateY(130px);
+    }
+
+    60% {
+        transform: translateX(150px) translateY(130px);
+    }
+        
+    75% {
+        transform: translateX(0px) translateY(130px);
+    }
+
+    80% {
+        transform: translateX(0px) translateY(260px);
+    }
+
+
+    90% {
+        transform: translateX(150px) translateY(260px);
+    }
+
+    100% {
+        transform: translateX(0px) translateY(260px);
+    }
+
+}
+
+
+
+
+
+
+/* -------------- L ----------------------- */
+
+.L {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.l-1 {
+    width: 50px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.l-2 {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.carre {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    bottom: 10px;
+    left: 70px ;
+    top: 10px;
+    left: 10px;
+    transition: 1s;
+    opacity: 0;
+
+    animation-name: move;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    animation-delay: 10s;
+
+
+
+}
+
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(0) translateY(150px);
+        opacity: 1;
+        
+    }
+
+    100% {
+        transform: translateX(50px) translateY(150px);
+        opacity: 0;
+        
+    }
+    
+}
+
+
+
+

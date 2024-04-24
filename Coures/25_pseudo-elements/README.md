@@ -38,7 +38,7 @@
 - Il est important de noter que le pseudo-élément `::first-letter` ne fonctionne que sur des blocs de texte et ne peut pas être utilisé pour sélectionner la première lettre d'un élément en ligne, comme une balise `<span>`.
 
 
-### 2.2 **``::fiirst-lne``:**
+### 2.2 **``::first-line``:**
 
 - **Description:**
 
@@ -170,6 +170,9 @@
 - **Description:**
 
     >La propriété CSS `content` est utilisée avec les pseudo-éléments `::before` et `::after` pour définir le contenu généré et inséré avant (`::before`) ou après (`::after`) le contenu réel de l'élément ciblé. 
+
+    - La propriété `content` peut également être utilisée pour insérer des caractères spéciaux ou des valeurs dynamiques, comme des compteurs, dans le contenu généré. Elle est très utile pour ajouter des éléments décoratifs ou des informations supplémentaires dans votre mise en page sans modifier la structure HTML.
+
     
 - **Voici un exemple d'utilisation de la propriété `content` :**
 
@@ -189,7 +192,6 @@
 
     Dans cet exemple, pour chaque paragraphe (`<p>`), le texte "Préfixe: " sera ajouté avant le texte réel, avec une mise en gras (`font-weight: bold`). De même, le texte " Suffixe." sera ajouté après le texte réel, avec une mise en italique (`font-style: italic`).
 
-- La propriété `content` peut également être utilisée pour insérer des caractères spéciaux ou des valeurs dynamiques, comme des compteurs, dans le contenu généré. Elle est très utile pour ajouter des éléments décoratifs ou des informations supplémentaires dans votre mise en page sans modifier la structure HTML.
 
 ### 5.2 **les valeures du content:**
 
@@ -294,4 +296,29 @@
         ```
 
         Dans cet exemple, le contenu généré par `::before` pour chaque `<div>` sera "Information : Ceci est une information". La fonction `attr(data-info)` récupère la valeur de l'attribut `data-info` de l'élément `<div>` et l'affiche dans le contenu généré.
+
+
+## 6. **`::placeholder`:**
+
+- **Description:**
+
+    - L'attribut `placeholder` est un attribut HTML utilisé dans les éléments de formulaire pour fournir un texte d'indication ou un exemple de saisie à l'utilisateur. Ce texte s'affiche dans le champ de saisie lorsqu'il est vide et disparaît dès que l'utilisateur commence à saisir du texte dans le champ.
+
+    - La pseudo-classe `::placeholder` en CSS est utilisée pour cibler et styliser le texte de l'attribut `placeholder` d'un élément de saisie de formulaire. 
+
+- **Exemple:**
+
+    ```css
+    /* Stylise le texte de l'attribut placeholder */
+    ::placeholder {
+        color: #aaa; /* Par exemple, change la couleur du texte en gris */
+        font-style: italic; /* Par exemple, met le texte en italique */
+    }
+    ```
+
+    ```html
+    <input type="text" placeholder="Nom">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    ```
 

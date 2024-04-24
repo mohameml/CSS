@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1[class="h1"] {
+            color: red;
+        }
+
+        [disabled] {
+            opacity: 0.5;
+            cursor: not-allowed;
+            }
+
+        [title=text] {
+            font-weight: bold;
+            color: red;
+        }
+
+        [title*=text] {
+            font-weight: bold;
+            color: red;
+        }
+    
+        [title~=text] {
+            font-weight: bold;
+            color: red;
+        }
+
+        [title^=text] {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1 class="h1"> H1 </h1>
+    <p class="c1">Titre</p>
+    <p class="c1">Titre</p>
+    <p class="h1">Titre</p>
+
+    <input type="text" class="inputField">
+    <input type="checkbox">
+    <button disabled>Valider</button>
+    <input type="button" value="not-allowed" disabled>
+    <h1>H1</h1>
+
+
+    <a href="#" title="This is sometext">Lien</a>
+    <span title="Some other text here">Texte</span>
+
+</body>
+</html>
