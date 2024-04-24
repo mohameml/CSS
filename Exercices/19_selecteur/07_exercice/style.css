@@ -1,0 +1,5 @@
+/* Styles pour l'exercice 07 */
+
+div:not([class]) > h3:nth-of-type(3) +  div {
+    color: red;
+}

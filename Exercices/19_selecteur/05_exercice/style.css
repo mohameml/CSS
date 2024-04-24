@@ -1,0 +1,6 @@
+/* Styles pour l'exercice 05 */
+
+div:not([class]) > p+div[title]:last-child:not([class]) {
+    color: red;
+}
+

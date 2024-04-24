@@ -1,0 +1,5 @@
+/* Styles pour l'exercice 08 */
+
+div :not(:last-child , :first-child , h3) {
+    color: red;
+}

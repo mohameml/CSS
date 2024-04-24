@@ -1,0 +1,4 @@
+/* Styles pour l'exercice 03 */
+.parent .baby:only-child {
+    color: red;
+}

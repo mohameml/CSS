@@ -1,0 +1,5 @@
+/* Styles pour l'exercice 02 */
+
+.parent > .child:last-child {
+    color: red  ;
+}
