@@ -1,0 +1,26 @@
+@import url(leon.css);
+
+/* first component  */
+
+.special-title {
+    font-size: 100px;
+    color: var(--special-color);
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    margin: 0;
+}
+
+.special-title + p {
+    margin-top: -30px;
+    line-height: 1.8;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+@media  (max-width : 768px) {
+    .special-title {
+        font-size: 80px;
+    }
+}
+/* end of first component  */

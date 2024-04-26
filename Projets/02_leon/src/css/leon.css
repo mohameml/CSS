@@ -1,0 +1,527 @@
+/* Start Varibales */
+:root {
+    --main-color : #10cab7 ; 
+    --seconde-color : #2c4755;
+    --section-bcakground : #F6F6F6; 
+    --special-color : #ebeced;
+    --section-padding: 60px;
+    --main-duration: 0.5s;
+    --letter-spacing : -4.6px ; 
+    --margin-top :100px;
+}
+/* End Varibales */
+
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* End Global Rules */
+
+
+
+
+
+
+
+
+/* -------- Start Container -------------- */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*  Small */
+@media (min-width  : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Meduim  */
+@media (min-width  : 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large  */
+@media (min-width  : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* -------- End Container -------------- */
+
+/*  ---------------------------------- Start Headr -------------------------  */
+
+.header {
+    padding: 20px;
+}
+
+.header  .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container .logo {
+    height: 60px;
+}
+
+
+.header .container .links {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  debut de l'icon  */
+.header .container  .links .icon   {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+.header .container .links .icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.header .container .links  .icon span:nth-child(2) {
+    width: 50%;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+
+
+}
+
+
+
+/* end de l'icon  */
+
+
+/* debut de style de list-Lien :  ul , li , a */
+
+.header .links ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    background-color: #F2F2F2;
+    min-width: 200px;
+    top:calc(100% + 5px);
+    display: none;
+    z-index: 1;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+
+/* on dessine le petite triangle  */
+.header .links ul::before {
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #F2F2F2 transparent;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+
+}
+
+
+.header ul > li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.header ul > li > a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    color: #333;
+    transition: 0.3s;
+}
+
+.header ul > li > a:hover {
+    padding-left: 25px;
+}
+
+
+
+
+/* ------------------- End Header ------------------------------ */
+
+
+/* -- ---------------------------- start landing ----------------------- -- */
+
+
+.landing {
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+
+.landing .text-intro {
+    width: 320px;
+    max-width: 100%;
+    text-align: center;
+}
+.landing .text-intro h1{
+    color: var(--main-color);
+    text-shadow: 0px 0px 1px var(--main-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.landing .text-intro p {
+
+    font-size: 19px;
+    line-height: 1.8;
+}
+/* -- ---------------------------- End landing ------------------------ -- */
+
+
+/* ------------------------- start features ---------------------- */
+.features {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-bcakground);
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap : 20px ;
+}
+
+.features .feat {
+    padding: 20px;
+    text-align: center;
+}
+
+.features .feat i  {
+    color: var(--main-color);
+}
+
+.features .feat h3  {
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.features .feat p  {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+/* ----------------------- end features -------------------------------------------  */
+
+/* -------------------------- start services ------------------------------------- */
+
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom : var(--section-padding) ;
+}
+
+.services .services-content {
+    margin-top: var(--margin-top);
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+}
+
+
+.services-content .col .srv {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+@media (max-width:768px) {
+
+    .services-content .col .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+.services-content .col .srv i {
+    color: var(--main-color);
+    flex-basis: 60px;
+}
+.services-content .col .srv .text {
+    flex: 1;
+}
+
+.services-content .col .srv .text h3 {
+    margin: 0 0 20px ;
+}
+
+.services-content .col .srv .text  p {
+    color: #767676;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+
+
+.services-content .col .image {
+    text-align: center;
+    position: relative;
+}
+.services-content .col .image::before {
+    content: "";
+    position: absolute;
+    background-color: var(--seconde-color);
+    width: 100px;
+    height: calc(100% + 100px);
+    top: -50px;
+    right: 0;
+    z-index: -1;
+}
+
+.services-content .col .image img {
+    width: 260px;
+
+}
+
+
+
+@media (max-width : 1199px) {
+    .image-col {
+        display: none;
+    }
+}
+/* --------------------------- end services ------------------------------------ */
+
+
+/* ------------------------------ start Portfolio -------------------------------- */
+
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-bcakground);
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 20px;
+    margin-top: var(--margin-top);
+}
+
+
+.portfolio .portfolio-content .col img {
+    max-width: 100%;
+    background-color: #F6F6F6;
+}
+.portfolio .portfolio-content .col .text {
+    background: white;
+    padding: 20px;
+    margin-top: 0;
+
+
+}
+
+.portfolio .portfolio-content .col .text h3 {
+    margin: 0;
+}
+
+.portfolio .portfolio-content .col .text p {
+    margin-bottom: 0;
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* ------------------------------- end Portfolio ------------------------------------ */
+
+
+/* ------------------------- start About ------------------------------------------ */
+
+.about {
+    padding-top: var(--section-padding);
+    padding-bottom: calc( var(--section-padding) + 60px);
+}
+
+.about .about-content {
+    margin-top: var(--margin-top);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 140px;
+
+}
+
+
+@media (max-width : 991px) {
+    .about .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap : 80px ;
+        
+    }
+}
+
+
+.about .about-content .image {
+    width: 250px;
+    height: 375px;
+    position: relative;
+}
+.about .about-content .image img {
+    max-width: 100%;
+}
+
+@media (max-width : 991px) {
+    .about .about-content .image {
+        margin: 0 auto ;
+    }
+}
+
+.about .about-content .image::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    background-color: var(--special-color);
+    z-index: -1;
+}
+
+.about .about-content .image::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    border-left: 60px solid var(--main-color);
+    border-bottom: 60px solid var(--main-color);
+    z-index: -1;
+    top : -25px;
+    right: -120px;
+}
+
+@media (max-width : 991px) {
+    .about .about-content .image::before ,
+    .about .about-content .image::after  {
+        display: none;
+    }
+}
+
+.about .about-content .info {
+    padding : 20px; 
+    flex : 1 ; 
+}
+
+.about .about-content .info .p-1 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.about .about-content .info p:not(.p-1) {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #777;
+}
+
+.about .about-content .info hr {
+    display: inline-block;
+    width: 50%;
+    border-color: var(--main-color);
+}
+/* ----------------------- end About ------------------------------------------- */
+
+/* ------------------------------------- Contact ------------------------------------ */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-bcakground);
+}
+
+.contact .contact-content {
+    margin-top: var(--margin-top);
+    text-align: center;
+}
+.contact .contact-content h1 {
+    color: var(--seconde-color);
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+.contact .contact-content a {
+    display: block;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact .contact-content .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact .contact-content .social i {
+    margin-left: 10px;
+    color: var(--seconde-color);
+}
+
+@media (max-width : 768px) {
+    .contact .contact-content a ,
+    .contact .contact-content h1 {
+        font-size: 25px;
+    }
+}
+
+
+/* ----------------------- footer ------------------------------------- */
+
+
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: var(--seconde-color);
+    padding: 30px 10px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
