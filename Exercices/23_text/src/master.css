@@ -1,0 +1,87 @@
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ------ ex01 : ----------- */
+
+.assign-1 {
+    text-align: center;
+    text-shadow: 1px 1px 0px #f44336 ,
+                2px 2px 0px #4f6dda ,
+                3px 3px 0px #9c27b0;
+}
+
+
+/* ------ ex02 --------- */
+
+.assign-2 {
+    text-align: center;
+}
+
+.assign-2 .one {
+    text-transform: uppercase;
+}
+
+.assign-2 .two {
+    text-transform: capitalize;
+}
+
+.assign-2 .three {
+    text-transform: lowercase;
+}
+
+/* ------------- ex03 --------------- */
+
+.assign-3 div:first-child {
+    /* text-align: center; */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eee;
+    width: 400px;
+}
+
+.assign-3 div:nth-child(2) {
+    /* text-align: center; */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eee;
+    width: 400px;
+}
+
+.assign-3 div:last-child {
+    /* text-align: center; */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eee;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ---------------- exercice 04 -------------- */
+
+
+
+.assign-4  a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 20px;
+    border-bottom: 10px solid #00514a;
+    background: #009688;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: capitalize;
+}
