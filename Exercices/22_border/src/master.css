@@ -1,0 +1,77 @@
+
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+/* ------------- exercie 01  --------------- */
+.assign-1 , 
+.assign-2 {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.assign-1 div {
+    padding: 20px;
+    background-color: #ddd;
+    width: 100px;
+    height: 1%;
+    margin: 10px;
+    text-align: center;
+    outline: 5px solid black;
+}
+
+.assign-1 div:first-child {
+    border: 5px solid red;
+}
+
+.assign-1 div:nth-child(2) {
+    border: 5px solid green;
+    border-top-color: blue;
+    border-bottom-color: blue;
+}
+
+.assign-1 div:last-child {
+    border-width: 5px;
+    border-color: red green blue yellow ;
+    border-style: dashed;
+}
+
+
+/* ------------- exercie 02  --------------- */
+
+.assign-2 {
+    flex-direction: column;
+}
+
+.element {
+    width: 400px;
+    background-color: #ddd;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.element-1::before , .element-3::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 80%;
+    left: 5px;
+    top: 10%;
+    background-color: #e91e63;
+}
+
+.element-2 {
+    visibility: hidden;
+}
+
+
+.element-3::before {
+    background-color: #009688;
+}
